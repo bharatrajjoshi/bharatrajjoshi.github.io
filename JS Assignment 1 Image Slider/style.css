@@ -1,0 +1,111 @@
+#container {
+    width: 800px;
+    height: 500px;
+    border: 2px solid gray;
+    margin: auto;
+}
+
+#image-slider-wrapper {
+    overflow: hidden;
+}
+
+#image-slider {
+    position: relative;
+    height: 500px;
+}
+
+li {
+    max-width: 100%;
+    float: left;
+    list-style: none;
+}
+
+
+.nav {
+    position: absolute;
+    top: 200px;
+    height: 50px;
+    width: 30px;
+    opacity: 0.6;
+}
+
+.nav:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#dotlist:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#dotlist {
+    list-style-type: none;
+    position: absolute;
+    top: 470px;
+    margin: 0px auto;
+    left: 49%;
+    height: 30px;
+    width: 125px;
+    align-content: center;
+    padding: 5px 5px 5px 5px;
+}
+
+#dot1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3px;
+    opacity: 0.5;
+    background-color: white;
+}
+
+#dot2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3px;
+    opacity: 0.5;
+    background-color: white;
+}
+
+#dot3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3px;
+    opacity: 0.5;
+    background-color: white;
+}
+
+#dot4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3px;
+    opacity: 0.5;
+    background-color: white;
+}
+
+#dot5 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    opacity: 0.5;
+    background-color: white;
+}
+
+#prev {
+    background: #000 url('./img/prev.png') no-repeat center;
+    left: 283px;
+}
+
+#next {
+    background: #000 url('./img/next.png') no-repeat center;
+    right: 282px;
+}
