@@ -1,0 +1,11 @@
+#container {
+    height: 600px;
+    width: 1000px;
+    border: solid 2px rgb(14, 9, 19);
+    margin: auto;
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+}
