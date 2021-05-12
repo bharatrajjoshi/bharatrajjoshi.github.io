@@ -1,0 +1,14 @@
+.app {
+    height: 500px;
+    width: 500px;
+    background: #dfdfdf;
+    position: relative;
+    border: solid 2px rgb(14, 9, 19);
+    margin: auto;
+ }
+  
+  .box {
+    /*background: #f44336;*/
+    border-radius: 50%;
+    position: absolute;
+  }
