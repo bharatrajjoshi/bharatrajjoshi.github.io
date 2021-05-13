@@ -1,0 +1,52 @@
+.app {
+    
+    height: 550px;
+    width: 400px;
+    background: #dfdfdf;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-image: url('images/highway-low.jpg');
+  }
+  .welcome-screen{
+  font-size: larger;
+  font-style: normal;
+  background-color: rgb(209, 203, 214);
+  text-align: left;
+  text-decoration: solid;
+  border: coral;
+  padding: auto;
+  border-style: double;
+  margin: 10%;
+
+  }
+
+  .app img {
+      width: 100%;
+      position: absolute;
+      top: 0px;
+    display: block;
+  }
+
+ 
+  
+  .app .player-car {
+    position: absolute;
+    bottom: 45px;
+   
+    transform: translateX(-50%);
+    transition-property: left, transform;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+  }
+  .app .enemy-car {
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  .hide {
+    display: none;
+  }
+  
+  .car-game-2d {
+    position: relative;
+  }
