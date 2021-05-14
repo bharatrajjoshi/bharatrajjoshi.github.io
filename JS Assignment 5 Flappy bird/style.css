@@ -1,0 +1,42 @@
+#wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background: url("../images/background.png");
+    border: 3px solid red;
+}
+
+.gameover {
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    margin: auto;
+    padding: 20px 20px 20px 100px;
+    color: red;
+    background: lightgrey;
+    opacity: 1;
+    
+}
+
+
+.scorecard {
+    font-size: 25px;
+    color: yellow;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.welcome {
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    margin: auto;
+    padding: 20px 20px 20px 100px;
+    color: rgb(255, 60, 0);
+    background: lightgrey;
+    opacity: 1;
+}
