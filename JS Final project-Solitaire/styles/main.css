@@ -1,0 +1,328 @@
+* {
+  user-select: none;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Grenze", serif;
+  height: 700px;
+  background: radial-gradient(#409c2b, #385e2c);
+  font-size: 1.5vw;
+}
+.card {
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 108.54px;
+  height: 150.84px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0.2em;
+  box-sizing: border-box;
+  position: absolute;
+  transform: rotateY(-180deg);
+  transition: transform 0.3s ease, top 0.02s linear, left 0.02s linear;
+  z-index: 5;
+}
+.card * {
+  pointer-events: none;
+}
+.card.open {
+  cursor: move;
+  transition: transform 0.3s ease;
+  transform: rotateY(0);
+}
+.card.open:after {
+  display: none;
+}
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/back.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.card > * {
+  position: absolute;
+  font-size: 1.3em;
+}
+.card > span:first-child {
+  top: 0.25em;
+  left: 0.25em;
+}
+.card > span:last-child {
+  bottom: 0.25em;
+  right: 0.25em;
+}
+.card .type {
+  position: absolute;
+  text-align: center;
+  font-size: 4em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card.red {
+  color: red;
+}
+.card.selected {
+  margin-top: 0 !important;
+  pointer-events: none;
+  z-index: 10;
+}
+.card.selected + .selected {
+  margin-top: 2em !important;
+}
+.card.selected + .selected + .selected {
+  margin-top: 4em !important;
+}
+.card.selected + .selected + .selected + .selected {
+  margin-top: 6em !important;
+}
+.card.selected + .selected + .selected + .selected + .selected {
+  margin-top: 8em !important;
+}
+.card.selected + .selected + .selected + .selected + .selected + .selected {
+  margin-top: 10em !important;
+}
+.card.selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected {
+  margin-top: 12em !important;
+}
+.card.selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected {
+  margin-top: 14em !important;
+}
+.card.selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected {
+  margin-top: 16em !important;
+}
+.card.selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected {
+  margin-top: 18em !important;
+}
+.card.selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected {
+  margin-top: 20em !important;
+}
+.card.selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected {
+  margin-top: 22em !important;
+}
+.card.selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected {
+  margin-top: 24em !important;
+}
+.card.selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected
+  + .selected {
+  margin-top: 26em !important;
+}
+.full,
+.view,
+.foundations,
+.stack {
+  width: 108.54px;
+  height: 150.84px;
+  border: 1px dashed white;
+  box-sizing: border-box;
+}
+.full {
+  position: relative;
+}
+.full:before {
+  content: "↺";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  color: white;
+  font-weight: 300;
+}
+.full:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.draw {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+.draw > div {
+  margin: 0 1em 0 0;
+}
+.stacks {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.stacks .stack .card:nth-child(2) {
+  margin-top: 1em;
+}
+.stacks .stack .card:nth-child(3) {
+  margin-top: 2em;
+}
+.stacks .stack .card:nth-child(4) {
+  margin-top: 3em;
+}
+.stacks .stack .card:nth-child(5) {
+  margin-top: 4em;
+}
+.stacks .stack .card:nth-child(6) {
+  margin-top: 5em;
+}
+.stacks .stack .card:nth-child(7) {
+  margin-top: 6em;
+}
+.stacks .stack .card:nth-child(8) {
+  margin-top: 7em;
+}
+.stacks .stack .card:nth-child(9) {
+  margin-top: 8em;
+}
+.stacks .stack .card:nth-child(10) {
+  margin-top: 9em;
+}
+.stacks .stack .card:nth-child(11) {
+  margin-top: 10em;
+}
+.stacks .stack .card:nth-child(12) {
+  margin-top: 11em;
+}
+.stacks .stack .card:nth-child(13) {
+  margin-top: 12em;
+}
+.foundation {
+  display: flex;
+  justify-content: space-around;
+}
+.foundation > div {
+  margin: 0 1em 0 0;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+#game-board {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  align-items: stretch center;
+  border: 2px solid rgba(167, 201, 164, 0.6);
+  border-radius: 5px;
+  padding: 20px 20px 20px 20px;
+  background-image: url(../assets/background.jpg);
+}
+#score {
+  margin-right: 3vw;
+  color: lightgrey;
+}
+#timer {
+  margin-right: auto;
+  color: white;
+}
+button {
+  font-size: 1.6vw;
+  background: #629736;
+  width: 10vw;
+  border: solid 1px lightgrey;
+  border-radius: 2px;
+  color: lightgrey;
+  font-family: "Grenze", serif;
+}
+h1 {
+  color: lightgrey;
+  margin: 0;
+  font-size: 3.5vw;
+}
+footer {
+  display: flex;
+  justify-content: left;
+  margin: 3px 0 auto 0;
+  width: 50vw;
+}
